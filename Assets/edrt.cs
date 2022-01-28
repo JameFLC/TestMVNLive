@@ -29,7 +29,8 @@ public class edrt : MonoBehaviour
             Debug.Log(bosses);
             bosses[i] = Instantiate(bossPrefab, transform);
             Debug.Log(bosses);
-            bosses[i].transform.Translate(new Vector3( i - maxBosses/2.0f, 0, 0));
+            float Xoffset = 0.5f;
+            bosses[i].transform.Translate(new Vector3( i* Xoffset - maxBosses/2.0f * Xoffset, 0, -i*0.1f));
 
             animators[i] = Instantiate(animationController, transform);
             animators[i].GetComponent<xsens.XsLiveAnimator>().Setup(actor, bosses[i].transform);
