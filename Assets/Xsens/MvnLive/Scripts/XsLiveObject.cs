@@ -61,7 +61,19 @@ namespace xsens
         /// <summary>
         /// Wake this instance and initialize the live objects.
         /// </summary>
-        IEnumerator Start()
+        private void Start()
+        {
+            Setup(mvnActors);
+        }
+
+
+        public void Setup(XsStreamReader actor)
+        {
+            mvnActors = actor;
+            StartCoroutine(SetupProcess());
+        }
+
+        IEnumerator SetupProcess()
         {
             isInited = false;
             //save start positions
