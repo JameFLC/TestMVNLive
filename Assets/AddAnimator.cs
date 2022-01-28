@@ -15,7 +15,7 @@ public class AddAnimator : MonoBehaviour
     IEnumerator AddOtherScriptAfterAWhile()
     {
         yield return new WaitForSeconds(5);
-        xsens.XsLiveAnimator sc = gameObject.AddComponent(typeof(xsens.XsLiveAnimator)) as xsens.XsLiveAnimator;
+        xsens.XsLiveAnimator sc = this.gameObject.AddComponent(typeof(xsens.XsLiveAnimator)) as xsens.XsLiveAnimator;
         sc.Setup(actor);
         
     }
