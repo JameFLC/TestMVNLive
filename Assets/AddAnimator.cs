@@ -9,7 +9,7 @@ public class AddAnimator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        xsens.XsLiveAnimator sc = this.gameObject.AddComponent(typeof(xsens.XsLiveAnimator)) as xsens.XsLiveAnimator;
+        xsens.XsLiveAnimator sc = this.gameObject.AddComponent<xsens.XsLiveAnimator>();
 
         
         StartCoroutine(AddOtherScriptAfterAWhile());
