@@ -393,7 +393,7 @@ namespace xsens
             //save start positions
             target = gameObject.transform;
             origPos = target;
-
+            Debug.Log(this + " object begin setup");
             //create an MvnActor 
             GameObject obj = (GameObject)Instantiate(Resources.Load("MvnActor"));
             obj.transform.parent = gameObject.transform;

@@ -8,13 +8,14 @@ public class edrt : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        xsens.XsLiveAnimator ani = GetComponent<xsens.XsLiveAnimator>();
-        ani.Setup(actor);
+        StartCoroutine(AddOtherScriptAfterAWhile());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator AddOtherScriptAfterAWhile()
     {
-        
+        yield return new WaitForSeconds(5);
+        xsens.XsLiveAnimator ani = GetComponent<xsens.XsLiveAnimator>();
+        ani.Setup(actor);
+
     }
 }
