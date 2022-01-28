@@ -16,7 +16,9 @@ public class AddAnimator : MonoBehaviour
     {
         yield return new WaitForSeconds(5);
         xsens.XsLiveAnimator sc = this.gameObject.AddComponent(typeof(xsens.XsLiveAnimator)) as xsens.XsLiveAnimator;
-        sc.Setup(actor);
-        
+
+        xsens.XsLiveAnimator ani = GetComponent<xsens.XsLiveAnimator>();
+        ani.Setup(actor);
+
     }
 }
