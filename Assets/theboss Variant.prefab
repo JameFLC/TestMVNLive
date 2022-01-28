@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &9198225738503478699
+--- !u!114 &7590653764779208826
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9,24 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 4329415847787164805}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6a7dbb44a48baf4c9c4ee1e496a5db2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9f5039778d380ee4c92c94bd0b887646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mvnActors: {fileID: 0}
-  actorID: 1
-  applyRootMotion: 1
-  prop1:
-    type: 0
-    segment: 0
-  prop2:
-    type: 0
-    segment: 0
-  prop3:
-    type: 0
-    segment: 0
-  prop4:
-    type: 0
-    segment: 0
 --- !u!1001 &3518513176524212692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40,15 +25,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cde3b44dd76e93d448cbccb2c8dbfe23, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -1.9482574
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cde3b44dd76e93d448cbccb2c8dbfe23, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.00000023841858
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cde3b44dd76e93d448cbccb2c8dbfe23, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 3.3488646
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: cde3b44dd76e93d448cbccb2c8dbfe23, type: 3}
       propertyPath: m_LocalRotation.w
