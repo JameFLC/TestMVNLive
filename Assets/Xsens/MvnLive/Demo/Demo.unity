@@ -181,7 +181,7 @@ PrefabInstance:
     - target: {fileID: 114232509722714526, guid: bd264ba14847aed43af8a04743916a49, type: 3}
       propertyPath: mvnActors
       value: 
-      objectReference: {fileID: 1002677805}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd264ba14847aed43af8a04743916a49, type: 3}
 --- !u!1001 &2665053
