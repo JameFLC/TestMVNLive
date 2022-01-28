@@ -357,11 +357,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037341684}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 216c81446b97c1c46be5e2156dddb69b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  actor: {fileID: 1002677805}
 --- !u!850595691 &1048757810
 LightingSettings:
   m_ObjectHideFlags: 0

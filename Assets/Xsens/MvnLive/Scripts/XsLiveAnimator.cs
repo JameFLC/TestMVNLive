@@ -378,12 +378,13 @@ namespace xsens
         /// Wake this instance and initialize the live objects.
         /// </summary>
         /// 
-        private void Start()
+        public void Setup(XsStreamReader actor)
         {
-            StartCoroutine(Setup());
+            mvnActors = actor;
+            StartCoroutine(SetupProcess());
         }
 
-        IEnumerator Setup()
+        IEnumerator SetupProcess()
         {
             isInited = false;
 #if TPOSE_FIRST
