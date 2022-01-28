@@ -396,7 +396,7 @@ namespace xsens
             Debug.Log(this + " object begin setup");
             //create an MvnActor 
             GameObject obj = (GameObject)Instantiate(Resources.Load("MvnActor"));
-            obj.transform.parent = gameObject.transform;
+            obj.transform.parent = newTarget;
             mvnActor = obj.transform;
             if (mvnActor == null)
             {
@@ -448,7 +448,7 @@ namespace xsens
 
                 //add an empty object, which we can use for missing segments
                 missingSegments = new GameObject("MissingSegments");
-                missingSegments.transform.parent = gameObject.transform;
+                missingSegments.transform.parent = target;
 
 
                 //setup the animation and the model as well
