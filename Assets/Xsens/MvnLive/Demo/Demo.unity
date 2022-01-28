@@ -274,9 +274,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossPrefab: {fileID: 919132149155446097, guid: cde3b44dd76e93d448cbccb2c8dbfe23, type: 3}
-  bossPrefabVariant: {fileID: 4329415847787164805, guid: 6d075cd2f1240f8468be5d11a6b07e3d, type: 3}
+  animationController: {fileID: 7297188334426244793, guid: 8a18177ccd399b3438e5ff1caf716239, type: 3}
   variantSpawn: {fileID: 2070742676}
   actor: {fileID: 1002677805}
+  maxBosses: 12
 --- !u!4 &529202765
 Transform:
   m_ObjectHideFlags: 0
