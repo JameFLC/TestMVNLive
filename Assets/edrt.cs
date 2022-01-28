@@ -5,6 +5,8 @@ using UnityEngine;
 public class edrt : MonoBehaviour
 {
     [SerializeField] xsens.XsStreamReader actor;
+    [SerializeField] Transform boss;
+    private Transform[] targetModel;
     // Start is called before the first frame update
     void Start()
     {
@@ -13,9 +15,10 @@ public class edrt : MonoBehaviour
 
     IEnumerator AddOtherScriptAfterAWhile()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(1);
         xsens.XsLiveAnimator ani = GetComponent<xsens.XsLiveAnimator>();
-        ani.Setup(actor);
+        ani.Setup(actor, boss);
 
+        
     }
 }

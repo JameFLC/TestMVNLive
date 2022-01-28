@@ -378,20 +378,20 @@ namespace xsens
         /// Wake this instance and initialize the live objects.
         /// </summary>
         /// 
-        public void Setup(XsStreamReader actor)
+        public void Setup(XsStreamReader actor, Transform newTarget)
         {
             mvnActors = actor;
-            StartCoroutine(SetupProcess());
+            StartCoroutine(SetupProcess(newTarget));
         }
 
-        IEnumerator SetupProcess()
+        IEnumerator SetupProcess(Transform newTarget)
         {
             isInited = false;
 #if TPOSE_FIRST
             isFirstPose = true;
 #endif
             //save start positions
-            target = gameObject.transform;
+            target = newTarget;
             origPos = target;
             Debug.Log(this + " object begin setup");
             //create an MvnActor 

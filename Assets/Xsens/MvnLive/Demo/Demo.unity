@@ -334,24 +334,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6d075cd2f1240f8468be5d11a6b07e3d, type: 3}
---- !u!1 &373542034 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4329415847787164805, guid: 6d075cd2f1240f8468be5d11a6b07e3d, type: 3}
+--- !u!4 &373542037 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3989903855968890431, guid: 6d075cd2f1240f8468be5d11a6b07e3d, type: 3}
   m_PrefabInstance: {fileID: 373542033}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &373542035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 373542034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 216c81446b97c1c46be5e2156dddb69b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actor: {fileID: 1002677805}
 --- !u!114 &1002677805 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 11400002, guid: 1e27ac8e168f6b64896a2905a6927fb8, type: 3}
@@ -381,6 +368,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actor: {fileID: 1002677805}
+  boss: {fileID: 373542037}
 --- !u!850595691 &1048757810
 LightingSettings:
   m_ObjectHideFlags: 0

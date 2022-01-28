@@ -7,7 +7,7 @@ public class AddAnimator : MonoBehaviour
 
     [SerializeField] xsens.XsStreamReader actor;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         xsens.XsLiveAnimator sc = this.gameObject.AddComponent<xsens.XsLiveAnimator>();
 
@@ -20,6 +20,6 @@ public class AddAnimator : MonoBehaviour
         yield return new WaitForSeconds(1);
 
         xsens.XsLiveAnimator ani = GetComponent<xsens.XsLiveAnimator>();
-        ani.Setup(actor);
+        ani.Setup(actor, this.transform);
     }
 }
