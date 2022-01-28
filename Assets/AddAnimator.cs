@@ -17,7 +17,7 @@ public class AddAnimator : MonoBehaviour
 
     IEnumerator AddOtherScriptAfterAWhile()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(1);
 
         xsens.XsLiveAnimator ani = GetComponent<xsens.XsLiveAnimator>();
         ani.Setup(actor);

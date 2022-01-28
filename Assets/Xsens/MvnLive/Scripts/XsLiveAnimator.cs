@@ -863,6 +863,7 @@ namespace xsens
             if (!isInited)
                 return;
 
+            Debug.Log("Initied");
             CheckProps();
 
             //Store the parent transform so that we can apply data from MVN assuming our character is in the center of the world facing the forward vector
