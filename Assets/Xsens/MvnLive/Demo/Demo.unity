@@ -357,26 +357,11 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037341684}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6a7dbb44a48baf4c9c4ee1e496a5db2, type: 3}
+  m_Script: {fileID: 11500000, guid: 216c81446b97c1c46be5e2156dddb69b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mvnActors: {fileID: 1002677805}
-  actorID: 1
-  applyRootMotion: 1
-  prop1:
-    type: 0
-    segment: 0
-  prop2:
-    type: 0
-    segment: 0
-  prop3:
-    type: 0
-    segment: 0
-  prop4:
-    type: 0
-    segment: 0
 --- !u!850595691 &1048757810
 LightingSettings:
   m_ObjectHideFlags: 0

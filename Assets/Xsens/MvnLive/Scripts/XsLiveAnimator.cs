@@ -377,7 +377,13 @@ namespace xsens
         /// <summary>
         /// Wake this instance and initialize the live objects.
         /// </summary>
-        IEnumerator Start()
+        /// 
+        private void Start()
+        {
+            StartCoroutine(Setup());
+        }
+
+        IEnumerator Setup()
         {
             isInited = false;
 #if TPOSE_FIRST
